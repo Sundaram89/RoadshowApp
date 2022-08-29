@@ -1,0 +1,80 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:id="@+id/linearLayout53"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/textView203"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Products"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textFontWeight="900"
+            android:textColor="#181725"
+            android:fontFamily="sans-serif-medium"
+
+            app:layout_constraintStart_toEndOf="@+id/back3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bgwhiterounded"
+        android:clickable="true"
+        android:id="@+id/searchView"
+        android:backgroundTint="#F2F3F2"
+        android:layout_marginTop="20dp"
+        android:iconifiedByDefault="false"
+        android:contextClickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout53"
+        />
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_grid_view_list1"
+        android:horizontalSpacing="8dp"
+
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

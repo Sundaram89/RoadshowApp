@@ -1,0 +1,90 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintWidth_percent="0.4"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/heart3" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:src="@drawable/heart1"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1111"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.7"
+        android:background="@drawable/bglayout"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/jeans">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Numbers"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1111"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout1111"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1111" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Numbers"
+        android:textAlignment="center"
+        android:textColor="#A1A1A1"
+        android:textFontWeight="900"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1111"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout1111"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

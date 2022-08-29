@@ -1,0 +1,115 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_alert" />
+
+    <TextView
+        android:id="@+id/textView129"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:textFontWeight="900"
+        android:textColor="#181725"
+        android:text="Oh Snap! Order Failed"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView35" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textFontWeight="400"
+        android:textColor="#A1A1A1"
+        android:layout_marginTop="20dp"
+        android:text="Looks like something went wrong"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView129" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textFontWeight="400"
+        android:textColor="#A1A1A1"
+        android:text="while processing your request."
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout35"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/bglayout3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49">
+
+        <TextView
+            android:id="@+id/tryagin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2C64F3"
+            android:gravity="center"
+            android:text="PLEASE TRY AGAIN"
+            android:textColor="#ffffff"
+            android:textFontWeight="900"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout35">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to home"
+            android:id="@+id/backhome"
+            android:textSize="12dp"
+            android:textFontWeight="400"
+            android:textColor="#000000"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
